@@ -1,0 +1,11 @@
+.tablo .tablo tr, .tablo td
+{
+	border: 1px solid black;
+	width: 100%;
+}
+
+.ciz
+{
+	background-color: blue;
+	color: yellow;
+}
