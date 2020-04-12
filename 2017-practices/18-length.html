@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery'de Length => Bir Nesnenin Sayfada Kaç Tane Olduğunu Verir</title>
+	<style type="text/css">		
+		ul{
+			list-style: none; margin: 0; padding: 0;
+		}
+		ul li{
+			float: left; position: relative;
+		}
+		ul li a{
+			display: block; width: 100px; height: 50px;  background-color: orangered; color: white; font: bold 17px Arial; text-align: center; line-height: 50px; text-decoration: none;
+		}
+		ul li a:hover{
+			background-color: purple; color: yellow; text-decoration: underline;
+		}
+		ul li ul {
+			display: none;
+		}
+		ul li:hover ul {
+			display: block; position: absolute;
+		}
+		
+	</style>
+</head>
+<body>
+
+<ul>
+	<li><a href="#">1.li</a>
+		<ul>
+			<li><a href="#">alt li</a></li>
+			<li><a href="#">alt li</a></li>
+			<li><a href="#">alt li</a></li>
+			<li><a href="#">alt li</a></li>
+			<li><a href="#">alt li</a></li>
+			<li><a href="#">alt li</a></li>
+			<li><a href="#">alt li</a></li>
+			<li><a href="#">alt li</a></li>
+			<li><a href="#">alt li</a></li>
+		</ul>
+	</li>
+	<li><a href="#">2.li</a>
+		<ul>
+			<li><a href="#">alt li</a></li>
+			<li><a href="#">alt li</a></li>
+			<li><a href="#">alt li</a></li>
+		</ul>
+	</li>
+	<li><a href="#">3.li</a>
+		<ul>
+			<li><a href="#">alt li</a></li>
+			<li><a href="#">alt li</a></li>
+		</ul>
+	</li>
+	<li><a href="#">4.li</a></li>
+	<li><a href="#">5.li</a></li>
+	<li><a href="#">6.li</a>
+		<ul>
+			<li><a href="#">alt li</a></li>
+			<li><a href="#">alt li</a></li>
+			<li><a href="#">alt li</a></li>
+		</ul>
+	</li>
+	<li><a href="#">7.li</a></li>
+	<li><a href="#">8.li</a>
+		<ul>
+			<li><a href="#">alt li</a></li>
+			<li><a href="#">alt li</a></li>
+			<li><a href="#">alt li</a></li>
+		</ul>
+	</li>
+	<li><a href="#">9.li</a></li>
+	<li><a href="#">10.li</a>
+		<ul>
+			<li><a href="#">alt li</a></li>
+			<li><a href="#">alt li</a></li>
+			<li><a href="#">alt li</a></li>
+		</ul>
+	</li>
+	<li><a href="#">11.li</a></li>
+	<li><a href="#">12.li</a>
+		<ul>
+			<li><a href="#">alt li</a></li>
+			<li><a href="#">alt li</a></li>
+			<li><a href="#">alt li</a></li>
+			<li><a href="#">alt li</a></li>
+			<li><a href="#">alt li</a></li>
+			<li><a href="#">alt li</a></li>
+			<li><a href="#">alt li</a></li>
+			<li><a href="#">alt li</a></li>
+			<li><a href="#">alt li</a></li>
+			<li><a href="#">alt li</a></li>
+			<li><a href="#">alt li</a></li>
+			<li><a href="#">alt li</a></li>
+			<li><a href="#">alt li</a></li>
+			<li><a href="#">alt li</a></li>
+			<li><a href="#">alt li</a></li>	
+		</ul>
+	</li>
+</ul>
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		var kactane = $("ul li").length;
+		alert(kactane);
+	});
+</script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery'de Fade Metodları => +fadeIn(),fadeOut(),fadeToggle(),fadeTo()</title>
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript">
+		
+		$(document).ready(function(){
+				
+			$.fade = {
+				in : function(){
+					$("div#bir").fadeIn(5000);
+				},
+				out : function(){
+					$("div#iki").fadeOut(3000);
+				},
+				toggle : function(){
+					$("div#uc").fadeToggle(2000);
+				},
+				to : function(){
+					$("div#dort").fadeTo(2000,"0.5");
+				}
+			}
+
+		});
+		
+
+	</script>
+	<style type="text/css">
+		div{
+			width: 250px; height:250px; float: left; margin-right: 20px; 
+		}
+		input{
+			border:0; width: 100px; height: 30px; color: white; font-weight: bold; font-size: 16px; cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+
+<input style="background-color: orange" type="submit" onclick="$.fade.in()" value="fadeIn">
+<input style="background-color: red" type="submit" onclick="$.fade.out()" value="fadeOut">
+<input style="background-color: blue" type="submit" onclick="$.fade.toggle()" value="fadeToggle">
+<input style="background-color: green" type="submit" onclick="$.fade.to()" value="fadeTo">
+<br /><br />
+<div id="bir" style="background-color: orange; display: none;"></div>
+<div id="iki" style="background-color: red"></div>
+<div id="uc" style="background-color: blue"></div>
+<div id="dort" style="background-color: green"></div>
+
+</body>
+</html>

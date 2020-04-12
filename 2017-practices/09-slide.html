@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery'de Slide Metodları => slideUp(), slideDown(), slideToggle()</title>
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript">
+		
+		$(document).ready(function(){
+				
+			$.slide = {
+				up : function(){
+					$("img#bir").slideUp(1000);
+				},
+				down : function(){
+					$("img#iki").slideDown(5000);
+				},
+				toggle : function(){
+					$("img#uc").slideToggle(500);
+				}
+			}
+
+		});
+		
+
+	</script>
+	<style type="text/css">
+		input{
+			border:0; margin:10px; width: 100px; height: 30px; color: white; font-weight: bold; font-size: 16px; cursor: pointer; border-radius: 10px; box-shadow: 5px 5px 2px #ddd;
+		}
+		input:focus{
+			outline: none;
+		}
+		div{
+			width:100px; margin: 25px auto; 
+		}
+		img{
+			margin: 20px;
+		}
+	</style>
+</head>
+<body>
+
+<div>
+	<input style="background-color: purple" type="submit" onclick="$.slide.up()" value="slideUp">
+	<input style="background-color: maroon" type="submit" onclick="$.slide.down()" value="slideDown">
+	<input style="background-color: pink" type="submit" onclick="$.slide.toggle()" value="slideToggle">
+</div>
+
+<br /><br />
+
+<img id="bir" src="resim/uzay.png" width="400">
+<img id="iki" src="resim/astronot.png" width="400" style="display: none">
+<img id="uc" src="resim/sahane.png" width="400">
+
+</body>
+</html>

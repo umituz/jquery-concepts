@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery'de Serialize Metodu</title>
+	<style type="text/css">
+		input[type=submit]{border: 0; width: 75px; height: 25px; background-color: orangered; color: white}
+	</style>
+</head>
+<body>
+
+<form id="form_alani">
+	<table cellpadding="5" cellspacing="5">
+		<tr>
+			<td>Ad Soyad</td>
+			<td><input type="text" name="adsoyad"></td>
+		</tr>
+		<tr>
+			<td>Email</td>
+			<td><input type="text" name="email"></td>
+		</tr>
+		<tr>
+			<td>Cinsiyet</td>
+			<td><input type="radio" name="cinsiyet" value="Erkek">Erkek <input type="radio" name="cinsiyet" value="Kadın">Kadın</td>
+		</tr>
+		<tr>
+			<td>Telefon</td>
+			<td><input type="text" name="telefon"></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td align="center"><input type="submit" name=""></td>
+		</tr>
+	</table>
+</form>
+
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript">	
+	$(document).ready(function(){
+
+		$("input[type=submit]").click(function(){
+			var butun_degerler = $("form#form_alani").serialize();
+			alert(butun_degerler);
+		});
+
+	});
+</script>
+</body>
+</html>

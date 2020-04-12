@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery'de Tek ve Çift Tıklama Metodu - click() // dblclick()</title>
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript">
+		
+		$(function(){
+			$("img#resim1").attr("width","300px");
+			$("img.resim2").attr("width","300px");
+			$("img#resim1").click(function(){
+				$(this).hide(1000);
+			});
+			$("img.resim2").dblclick(function(){
+				$(this).hide(5000);
+			});
+		})
+
+	</script>
+</head>
+<body>
+
+<img id="resim1" src="resim/uzay.png">
+<img class="resim2" src="resim/astronot.png">
+
+</body>
+</html>

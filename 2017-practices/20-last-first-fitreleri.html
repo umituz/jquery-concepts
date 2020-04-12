@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery'de :last ve :first Filtreleri</title>
+</head>
+<body>
+
+<ul>
+	<li><a href="#">1.link</a></li>
+	<li><a href="#">2.link</a></li>
+	<li><a href="#">3.link</a></li>
+	<li><a href="#">4.link</a></li>
+	<li><a href="#">5.link</a></li>
+</ul>
+
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript">	
+	$(document).ready(function(){
+
+		$("ul").css({
+			"list-style" : "none",
+			"margin" : "0",
+			"padding" : "0"
+		})
+		$("ul li:first a").css({
+			"text-decoration" : "none",
+			"background-color" : "red",
+			"color" : "white",
+			"display" : "block",
+			"width" : "100px",
+			"height" : "50px",
+			"text-align" : "center",
+			"line-height" : "50px"
+
+		});
+		$("ul li:last a").css({
+			"text-decoration" : "none",
+			"background-color" : "red",
+			"color" : "white",
+			"display" : "block",
+			"width" : "100px",
+			"height" : "50px",
+			"text-align" : "center",
+			"line-height" : "50px"
+
+		})
+
+	});
+</script>
+</body>
+</html>

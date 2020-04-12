@@ -1,0 +1,43 @@
+.bir{
+	width: 100%-10px; 
+	height: 40px;
+	background-color: orangered;
+	border: 1px solid blue; 
+	padding-top:10px; 
+	padding-left: 10px; 
+	color: white;
+	font: bold 17px Georgia;
+}
+
+.iki{
+	width: 100%-10px; 
+	height: 100px;
+	background-color: blue;
+	border: 1px solid red; 
+	padding-top:10px; 
+	padding-left: 10px; 
+	color: white;
+	font: bold 17px Georgia;
+}
+
+.uc{
+	width: 100%-10px; 
+	height: 100px;
+	background-color: red;
+	border: 5px solid yellow; 
+	padding-top:10px; 
+	padding-left: 10px; 
+	color: white;
+	font: bold 17px Georgia;
+}
+
+.dort{
+	width: 100%-10px; 
+	height: 100px;
+	background-color: maroon;
+	border: 5px solid purple; 
+	padding-top:10px; 
+	padding-left: 10px; 
+	color: white;
+	font: bold 17px Georgia;
+}

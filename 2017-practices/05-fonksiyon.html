@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery'de Fonksiyonlar</title>
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript">
+		
+		$(function(){
+			
+			/*
+			$.mesaj = function(x,y){
+				alert(x+" "+y);
+			}
+			*/
+			$.veritabani = {
+				kullanici : function(kullanici){
+					alert(kullanici);
+				}
+			}
+
+		});
+
+	</script>
+</head>
+<body>
+
+<input type="submit" onclick="$.veritabani.kullanici('15 kişi ')">
+
+</body>
+</html>

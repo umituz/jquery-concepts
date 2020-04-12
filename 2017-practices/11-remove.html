@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery'de Remove Metodu - Bir Nesneyi Tamamen Ortadan Kaldırır</title>
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript">
+		
+		$(document).ready(function(){
+				
+			$.gizle = function(){
+				$("img#bir").hide();
+			}
+
+			$.kaldir = function(){
+				$("img#iki").remove();
+			}
+
+		});
+		
+
+	</script>
+	
+</head>
+<body>
+
+<input type="submit" onclick="$.gizle()" value="Gizle">
+<input type="submit" onclick="$.kaldir()" value="Ortadan Kaldır">
+<br><br>
+<img id="bir" src="resim/sahane.png" width="500">
+<img id="iki" src="resim/astronot.png" width="500">
+
+</body>
+</html>

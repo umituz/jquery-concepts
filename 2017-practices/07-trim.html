@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery'de Boşluk Kaldırma Fonksiyonu => $.trim()</title>
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript">
+		
+		$(document).ready(function(){
+				
+			$.temizle = function(){
+				var yazi = $("input#yazi").val();
+				yazi = $.trim(yazi);
+				if(yazi == ""){
+					alert("Lüfen boş bırakmayın!");
+				}else{
+					alert(yazi);
+				}
+			}
+
+		});
+		
+
+	</script>
+</head>
+<body>
+
+<input type="text" id="yazi">
+<input type="submit" onclick="$.temizle()">
+
+</body>
+</html>

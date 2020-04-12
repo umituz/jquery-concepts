@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery'de Hover Metodu</title>
+	<style type="text/css">
+		div{
+			border: 1px solid blue; padding: 10px; font-weight: bold;
+		}
+	</style>
+</head>
+<body>
+
+<div id="kutu">  Bu div'in üzerine geldiğinde aşağıdaki resim kaybolur ve de bu div'in üzerinden ayrıldığın vakit ise o resim tekrar gözükecektir evlat!... </div>
+<br>
+<img src="resim/astronot.png">
+
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+
+		$("div#kutu").hover(function(){
+			$("img").hide(1000);
+		}, function(){
+			$("img").show(1000);
+		});
+
+	});
+</script>
+</body>
+</html>

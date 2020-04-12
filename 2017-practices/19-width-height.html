@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery'de Width ve Height Metodları</title>
+	<style type="text/css">
+		img{width: 500px; height: 300px; border: 2px solid blue}
+	</style>
+</head>
+<body>
+
+<img id="resim" src="resim/astronot.png">
+
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript">	
+	$(document).ready(function(){
+
+		var genislik = $("img#resim").width(700).width();
+		var yukseklik = $("img#resim").height(500).height();
+		alert("Resminiz, "+genislik+"px genişliğinde ve de "+yukseklik+"px yüksekliğindedir.");
+
+	});
+</script>
+</body>
+</html>
